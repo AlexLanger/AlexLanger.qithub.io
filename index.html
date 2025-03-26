@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Observer - Лангер Алексей</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Подключаем Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Добавляем favicon -->
+    <link type="image/x-icon" href="obs_ic.ico" rel="shortcut icon">
+    <link type="image/x-icon" href="obs_ic.ico" rel="icon">
+    <!-- Подключаем CSS-файл -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="scanner-overlay">
+        <i class="fas fa-lock lock-icon"></i>
+        <button id="scan-button">Получить доступ</button>
+    </div>
+
+    <div class="main-content">
+        <div class="interface">
+            <div class="digital-clock" id="digital-clock"></div>
+            <div class="left-panel">
+                <img class="character-photo" src="character-photo.png" alt="Ваше фото">
+                <div class="sync-bar">
+                    <span>SYNCHRONIZATION</span>
+                    <div class="sync-lines">
+                        <div class="yellow-line"></div>
+                    </div>
+                </div>
+                <div class="exp-bar">
+                    <div class="labels">
+                        <span class="label">MIDDLE</span>
+                        <span class="label">SENIOR</span>
+                    </div>
+                </div>
+                <div class="status">
+                    <p>CITIZEN ID: 3910194017276/Moscow</p>
+                    <p>DATE OF BIRTH: 11/11</p>
+                    <p>GENDER: A-1</p>
+                    <p>OCCUPATION: Quality Assurance</p>
+                    <p>Education: Degree in Psychology, QA Education Expirence</p>
+                </div>
+                <div class="contacts">
+                    <p>Email: <a href="/cdn-cgi/l/email-protection#385459565f5d4a164959784159565c5d40164a4d"><span class="__cf_email__" data-cfemail="1438353a3331267a2535142d353a30312c7a2621"><span class="__cf_email__" data-cfemail="d7bbb6b9b0b2a5f9a6b697aeb6b9b3b2aff9a5a2">[email&#160;protected]</span></span></a></p>
+                    <p>Telegram: <a href="https://t.me/DRlAnger" target="_blank">Langer.QA</a></p>
+                </div>
+            </div>
+            <div class="right-panel">
+                <div class="header">
+                    <h1>[Лангер Алексей]</h1>
+                </div>
+                <div class="content">
+                    <div class="content-header">
+                        <button onclick="showSection('about')" class="active">CHAR</button>
+                        <button onclick="showSection('stack')">INV</button>
+                        <button onclick="showSection('achiv')">ACHIV</button>
+                    </div>
+                    <div class="content-main">
+                        <section id="about" class="active">
+                            <h3>Опыт работы</h3>
+                            <p>QA - инженер с 4 годами опыта и широким набором навыков. Находит баги и делает продукты стабильнее. Моиссия - устранять ошибки, пока они не стали угрозой.</p>
+                            <ul>
+                                <li>2021 - настоящее время: QA - инженер \ Тестировщик.</li>
+                                <li>Тестирование сайтов и приложений (Web & Mobile).</li>
+                                <li>Участие в запуске образовательных IT-проектов (EdTech).</li>
+                                <li>Опыт работы по ГПХ с игровыми студиями.</li>
+                            </ul>
+                            <h3>Уникальные навыки:</h3>
+                            <ul>
+                                <li>Разработка игр: Участие в gamejams и разработке игр.</li>
+                                <li>Управление в IT: Понимание ключевых процессов управления в IT.</li>
+                                <li>Психологическая экспертиза: Психологическое образование, позволяющее оптимизировать коммуникацию и командную работу.</li>
+                            </ul>
+                            <!-- Блок Role -->
+                            <div class="role">
+                                <p>QA-инженер широкого профиля, способный обеспечить качество на всех этапах разработки благодаря глубоким знаниям в функциональном, API, UI/UX и регрессионном тестировании, автоматизации, а также владению инструментами мониторинга и управления тестированием.</p>
+                            </div>
+                        </section>
+                        <section id="stack">
+                            <h3>Стек</h3>
+                            <div class="skill-group">
+                                <div class="skill-group-header">
+                                    <span>Инструменты для тестирования Front-end Web-приложений</span>
+                                    <i class="fas fa-plus toggle-btn"></i>
+                                </div>
+                                <div class="skill-group-content">
+                                    <ul>
+                                        <li><i class="fas fa-tools"></i> Postman</li>
+                                        <li><i class="fas fa-tools"></i> Insomnia</li>
+                                        <li><i class="fas fa-tools"></i> Charles</li>
+                                        <li><i class="fas fa-pen-ruler"></i> Figma</li>
+                                        <li><i class="fab fa-html5"></i> HTML</li>
+                                        <li><i class="fab fa-css3-alt"></i> CSS</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="skill-group">
+                                <div class="skill-group-header">
+                                    <span>Работа с базами данных</span>
+                                    <i class="fas fa-plus toggle-btn"></i>
+                                </div>
+                                <div class="skill-group-content">
+                                    <ul>
+                                        <li><i class="fas fa-database"></i> MetaBase</li>
+                                        <li><i class="fas fa-database"></i> PostgreSQL</li>
+                                        <li><i class="fas fa-database"></i> DBeaver</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="skill-group">
+                                <div class="skill-group-header">
+                                    <span>API тестирование</span>
+                                    <i class="fas fa-plus toggle-btn"></i>
+                                </div>
+                                <div class="skill-group-content">
+                                    <ul>
+                                        <li><i class="fas fa-code"></i> Swagger</li>
+                                        <li><i class="fas fa-code"></i> REST-API</li>
+                                        <li><i class="fas fa-code"></i> SOAP</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="skill-group">
+                                <div class="skill-group-header">
+                                    <span>Управление тестированием</span>
+                                    <i class="fas fa-plus toggle-btn"></i>
+                                </div>
+                                <div class="skill-group-content">
+                                    <ul>
+                                        <li><i class="fas fa-tasks"></i> Test IT</li>
+                                        <li><i class="fas fa-tasks"></i> Qase.io</li>
+                                        <li><i class="fas fa-tasks"></i> Allure TestOps</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="skill-group">
+                                <div class="skill-group-header">
+                                    <span>Баг-трекинг</span>
+                                    <i class="fas fa-plus toggle-btn"></i>
+                                </div>
+                                <div class="skill-group-content">
+                                    <ul>
+                                        <li><i class="fas fa-bug"></i> Jira</li>
+                                        <li><i class="fas fa-bug"></i> Яндекс.Трекер</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="skill-group">
+                                <div class="skill-group-header">
+                                    <span>Инструменты мониторинга и анализа</span>
+                                    <i class="fas fa-plus toggle-btn"></i>
+                                </div>
+                                <div class="skill-group-content">
+                                    <ul>
+                                        <li><i class="fas fa-chart-line"></i> Kibana</li>
+                                        <li><i class="fas fa-chart-line"></i> Jaeger</li>
+                                        <li><i class="fas fa-chart-line"></i> Grafana</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="skill-group">
+                                <div class="skill-group-header">
+                                    <span>Командная работа и визуализация</span>
+                                    <i class="fas fa-plus toggle-btn"></i>
+                                </div>
+                                <div class="skill-group-content">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i> MIRO</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="skill-group">
+                                <div class="skill-group-header">
+                                    <span>CI/CD</span>
+                                    <i class="fas fa-plus toggle-btn"></i>
+                                </div>
+                                <div class="skill-group-content">
+                                    <ul>
+                                        <li><i class="fab fa-github"></i> GitHub Actions</li>
+                                        <li><i class="fab fa-gitlab"></i> GitLab CI/CD</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="skill-group">
+                                <div class="skill-group-header">
+                                    <span>Мобильная разработка</span>
+                                    <i class="fas fa-plus toggle-btn"></i>
+                                </div>
+                                <div class="skill-group-content">
+                                    <ul>
+                                        <li><i class="fab fa-android"></i> Android Studio</li>
+                                        <li><i class="fab fa-apple"></i> X-Code</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="achiv">
+                            <h3>Достижения</h3>
+                            <ul>
+                                <li>Сократил количество критических багов, обнаруженных в prod, на 7%.</li>
+                                <li>Разработал и внедрил новые тест-кейсы и тест-планы, что позволило повысить эффективность процесса тестирования.</li>
+                                <li>Стал ментором для новых сотрудников и помог им освоить навыки тестирования и работы с инструментами мониторинга.</li>
+                                <li>Предложил улучшения UI/UX на основе результатов тестирования, которые были успешно внедрены и повысили удовлетворенность пользователей.</li>
+                                <li>Успешно взаимодействовал с разработчиками, аналитиками и продакт-менеджерами для улучшения качества продукта на всех этапах разработки.</li>
+                            </ul>
+                            <!-- Кнопка RESUME -->
+                            <a href="#" class="resume-button">RESUME</a>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключаем внешние скрипты -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'92618820fe7460c7',t:'MTc0MjkzODQ2MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9261eb01cf68ae89',t:'MTc0Mjk0MjUxMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'926226e4b9226766',t:'MTc0Mjk0NDk2My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+    <!-- Подключаем наш JavaScript-файл -->
+    <script src="script.js"></script>
+</body>
+</html>
