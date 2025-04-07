@@ -1,2 +1,2 @@
 # AlexLanger.qithub.io
-obs site v2
+The QA website profile is inspired by the game The Observer.
