@@ -58,6 +58,6 @@ skillGroupHeaders.forEach(header => {
         if (!isActive) {
             content.classList.add('active');
             header.classList.add('active');
-        }
+        }  
     });
 });

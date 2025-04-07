@@ -9,6 +9,7 @@ body {
     line-height: 1.6;
     position: relative;
     overflow: hidden;
+    cursor: url('cursor.cur') 1 2, auto;
 }
 
 body::before {
@@ -34,6 +35,7 @@ body::before {
     align-items: center;
     z-index: 1000;
     flex-direction: column;
+    cursor: url('point.cur') 1 2, auto;
 }
 
 .lock-icon {
@@ -41,6 +43,7 @@ body::before {
     color: #C2B280;
     text-shadow: 0 0 10px rgba(194, 178, 128, 0.8);
     margin-bottom: 20px;
+    cursor: url('point.cur') 1 2, auto;
 }
 
 #scan-button {
@@ -51,8 +54,8 @@ body::before {
     color: #FF0000;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 1.2em;
-    cursor: pointer;
     transition: all 0.3s ease;
+    cursor: url('point.cur') 1 2, auto;
 }
 
 #scan-button:hover {
@@ -238,7 +241,7 @@ body::before {
 .exp-bar::after {
     content: '';
     position: absolute;
-    width: 30%;
+    width: 57%;
     height: 10px;
     background: linear-gradient(to right, #FFD700, #DAA520);
     border-radius: 5px;
@@ -303,7 +306,7 @@ body::before {
     font-size: 1.2em;
     padding: 12px 20px;
     margin: 0 15px;
-    cursor: pointer;
+    cursor: url('point.cur') 1 2, auto;
     border-radius: 5px;
     transition: all 0.3s ease;
     box-shadow: 0 0 3px rgba(255, 0, 0, 0.3);
@@ -327,9 +330,9 @@ body::before {
 .content-main {
     flex: 1;
     padding-top: 8px;
-    overflow: hidden; /* Скрываем содержимое, выходящее за рамки */
-    max-height: 650px; /* Увеличиваем высоту, так как убрали .analysis */
-    position: relative; /* Для позиционирования .role */
+    overflow: hidden;
+    max-height: 650px;
+    position: relative;
 }
 
 .content-main section {
@@ -359,7 +362,7 @@ body::before {
     background: rgba(255, 215, 0, 0.1);
     border: 1px solid #FFD700;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: url('point.cur') 1 2, auto;
     transition: background 0.3s ease;
 }
 
@@ -379,18 +382,18 @@ body::before {
 }
 
 #stack .skill-group-header.active .toggle-btn {
-    transform: rotate(45deg); /* Поворот "+" в "x" */
+    transform: rotate(45deg);
 }
 
 #stack .skill-group-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.8s ease; /* Плавная анимация раскрытия */
+    transition: max-height 0.8s ease;
 }
 
 #stack .skill-group-content.active {
     padding-top: 10px;
-    max-height: 200px; /* Увеличиваем высоту, так как есть больше пространства */
+    max-height: 200px;
 }
 
 #stack .skill-group-content ul {
@@ -415,7 +418,7 @@ body::before {
 /* Стили для блока Role в CHAR */
 #about .role {
     position: absolute;
-    bottom: 10px; /* Прижимаем ближе к нижнему краю */
+    bottom: 10px;
     left: 0;
     right: 0;
     border: 2px solid #D4C7A3;
@@ -448,17 +451,134 @@ body::before {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 1.2em;
     padding: 12px 20px;
-    cursor: pointer;
+    cursor: url('point.cur') 1 2, auto;
     border-radius: 5px;
     transition: all 0.3s ease;
     box-shadow: 0 0 3px rgba(255, 0, 0, 0.3);
-    text-decoration: none; /* Убираем подчёркивание для ссылки */
+    text-decoration: none;
 }
 
-#achiv .resume-button:hover {
-    transform: translateY(-2px);
-    color: #FFD700;
-    border-color: #FFD700;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
-    background: rgba(255, 215, 0, 0.1);
+#about {
+    font-size: 1em;
 }
+
+/* Стили для характеристик как таблицы */
+#about .char-stats {
+    padding-left: 0;
+    list-style: none;
+    display: table;
+    width: 100%;
+}
+
+#about .char-stats li {
+    display: table-row;
+    margin-bottom: 10px;
+}
+
+#about .char-stats .stat-name,
+#about .char-stats .stat-value,
+#about .char-stats .stat-desc {
+    display: table-cell;
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+
+#about .char-stats .stat-name {
+    width: 25%;
+}
+
+#about .char-stats .stat-name i {
+    margin-right: 10px;
+    color: #FFD700;
+    font-size: 1.2em;
+}
+
+#about .char-stats .stat-value {
+    width: 15%;
+    text-align: center;
+    color: #CC0000; /* Менее яркий красный */
+}
+
+#about .char-stats .stat-value .minus,
+#about .char-stats .stat-value .plus {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: rgba(255, 0, 0, 0.1);
+    border: 1px solid #CC0000;
+    color: #CC0000;
+    cursor: url('point.cur') 1 2, pointer;
+    transition: all 0.3s ease;
+}
+
+#about .char-stats .stat-value .minus:hover,
+#about .char-stats .stat-value .plus:hover {
+    background: rgba(255, 0, 0, 0.3);
+}
+
+#about .char-stats .stat-desc {
+    color: #A0A0A0; /* Менее яркий цвет для описания */
+    font-size: 0.9em;
+}
+
+/* Стили для перков */
+#about .perks-title {
+    margin-top: 20px;
+}
+
+#about .divider {
+    border: 1px solid #C2B280;
+    margin: 10px 0;
+}
+
+#about .perks-list {
+    padding-left: 0; /* Убираем отступ для списка */
+    list-style: none; /* Убираем точки */
+}
+
+#about .perks-list li {
+    margin-bottom: 10px; /* Увеличиваем расстояние между перками */
+}
+
+#about .perks-list .perk-name {
+    display: inline-block;
+    color: #FF0000; /* Красный цвет для названий перков */
+    background: rgba(255, 0, 0, 0.1);
+    border: 1px solid #CC0000;
+    padding: 2px 8px;
+    margin-right: 10px;
+    cursor: url('point.cur') 1 2, auto;
+    transition: all 0.3s ease;
+}
+
+#about .perks-list .perk-name:hover {
+    background: rgba(255, 0, 0, 0.3);
+}
+
+#about .perks-list .perk-desc {
+    display: inline;
+    color: #E0E0E0;
+}
+
+/* Стили для бонусов */
+#about .bonuses {
+    margin-top: 20px;
+    border: 2px solid #D4C7A3;
+    padding: 14px;
+    font-size: 0.95em;
+}
+
+#about .bonuses p {
+    margin: 0 0 10px 0;
+    color: #C2B280;
+}
+
+#about .bonuses ul {
+    padding-left: 20px;
+    margin: 0;
+    list-style: disc;
+}
+
+/* Остальные стили остаются без изменений */
