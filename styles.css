@@ -275,6 +275,10 @@ body::before {
     padding-bottom: 10px;
 }
 
+.header--mobile {
+    display: none;
+}
+
 .header h1 {
     color: #C2B280;
     font-size: 1.5em;
@@ -582,3 +586,63 @@ body::before {
 }
 
 /* Остальные стили остаются без изменений */
+
+/* Мобильные стили */
+@media (max-width: 768px) {
+
+    body {
+        overflow: scroll;
+    }
+
+    .header--desktop {
+        display: none;
+    }
+
+    .header--mobile {
+        display: block;
+    }
+
+    .main-content {
+        height: auto;
+    }
+
+    .content-main {
+        overflow: scroll;
+        max-height: none;
+    }
+
+    .interface {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 16px;
+    }
+
+    .digital-clock {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .character-photo {
+        width: auto;
+        height: 440px;
+    }
+
+    .contacts {
+        position: static;
+    }
+
+    .left-panel,
+    .right-panel {
+        width: 100%;
+        padding: 0;
+        border-right: none;
+    }
+
+    .left-panel {
+        margin-bottom: 32px;
+        border-bottom: none;
+    }
+
+
+}
